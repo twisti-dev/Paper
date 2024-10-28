@@ -5,10 +5,10 @@ Subject: [PATCH] API for checking sent chunks
 
 
 diff --git a/src/main/java/org/bukkit/entity/Player.java b/src/main/java/org/bukkit/entity/Player.java
-index 4bc4a1c0c6f6759f984843823f1bbec6ffed92bc..7b699c1e63cf5bc805754101f28066f836877ee2 100644
+index b3b6cdf5491397e0e802ac91f5805d560ed5d88a..20db14b3075d70b34eab16ca6332a2e674b34e75 100644
 --- a/src/main/java/org/bukkit/entity/Player.java
 +++ b/src/main/java/org/bukkit/entity/Player.java
-@@ -3804,6 +3804,47 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -3844,6 +3844,47 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
      void resetIdleDuration();
      // Paper end
  

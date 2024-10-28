@@ -6,10 +6,10 @@ Subject: [PATCH] Add player idle duration API
 Implements API for getting and resetting a player's idle duration.
 
 diff --git a/src/main/java/org/bukkit/entity/Player.java b/src/main/java/org/bukkit/entity/Player.java
-index 24dc710f61d08253f66e7ecfd69873e7ebf68d1b..09094f55509eaf66670c27409b4d5ec3d73412b0 100644
+index e128750b1175ab8bbe9b23fdd931665262c8d75e..4297a893799fe39b80029b97f6b5581d543afa8a 100644
 --- a/src/main/java/org/bukkit/entity/Player.java
 +++ b/src/main/java/org/bukkit/entity/Player.java
-@@ -3742,6 +3742,29 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -3782,6 +3782,29 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
      void increaseWardenWarningLevel();
      // Paper end
  

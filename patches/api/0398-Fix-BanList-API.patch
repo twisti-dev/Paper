@@ -130,10 +130,10 @@ index e805e629cede1c4c0674282c930cb67852718c3e..5248cf08ef83c7304dd76c42a2f646bb
 +    // Paper end
  }
 diff --git a/src/main/java/org/bukkit/entity/Player.java b/src/main/java/org/bukkit/entity/Player.java
-index c86d8b88a1501bd8fd7562a21ee111607e523962..fbaea481feccfc71d744d9f93de3bf637fdcaaad 100644
+index dd4ce1d68962ec668db7c687c1e4764db52bc04f..baf7ff3b23be8dd80d2e59299a6ec8f9ce1053df 100644
 --- a/src/main/java/org/bukkit/entity/Player.java
 +++ b/src/main/java/org/bukkit/entity/Player.java
-@@ -343,7 +343,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -359,7 +359,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
       *     (updated) previous ban
       */
      @Nullable
@@ -142,7 +142,7 @@ index c86d8b88a1501bd8fd7562a21ee111607e523962..fbaea481feccfc71d744d9f93de3bf63
  
      /**
       * Adds this user to the {@link ProfileBanList}. If a previous ban exists, this will
-@@ -359,7 +359,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -375,7 +375,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
       *     (updated) previous ban
       */
      @Nullable
@@ -151,7 +151,7 @@ index c86d8b88a1501bd8fd7562a21ee111607e523962..fbaea481feccfc71d744d9f93de3bf63
  
      /**
       * Adds this user to the {@link ProfileBanList}. If a previous ban exists, this will
-@@ -375,7 +375,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -391,7 +391,7 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
       *     (updated) previous ban
       */
      @Nullable

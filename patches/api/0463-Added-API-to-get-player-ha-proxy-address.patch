@@ -5,10 +5,10 @@ Subject: [PATCH] Added API to get player ha proxy address
 
 
 diff --git a/src/main/java/org/bukkit/entity/Player.java b/src/main/java/org/bukkit/entity/Player.java
-index 7b699c1e63cf5bc805754101f28066f836877ee2..7c56182acaf827f4b1a986a61cea8e9960604c98 100644
+index 20db14b3075d70b34eab16ca6332a2e674b34e75..82e92579f899ab3b86c748ba01860262b8ffa17f 100644
 --- a/src/main/java/org/bukkit/entity/Player.java
 +++ b/src/main/java/org/bukkit/entity/Player.java
-@@ -251,6 +251,16 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
+@@ -267,6 +267,16 @@ public interface Player extends HumanEntity, Conversable, OfflinePlayer, PluginM
      @Nullable
      public InetSocketAddress getAddress();
  

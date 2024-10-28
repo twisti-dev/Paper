@@ -1,0 +1,26 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Jake Potrebic <jake.m.potrebic@gmail.com>
+Date: Mon, 27 Mar 2023 10:20:00 -0700
+Subject: [PATCH] Add Structure check API
+
+
+diff --git a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
+index b1ad6c47d3d42c93411753d4505ac9142b1697d3..34e8afae13085f0a9ce0c916d911c88c395418e0 100644
+--- a/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
++++ b/src/main/java/org/bukkit/craftbukkit/CraftWorld.java
+@@ -250,6 +250,15 @@ public class CraftWorld extends CraftRegionAccessor implements World {
+         };
+     }
+     // Paper end
++    // Paper start - structure check API
++    @Override
++    public boolean hasStructureAt(final io.papermc.paper.math.Position position, final Structure structure) {
++        return this.world.structureManager().getStructureWithPieceAt(
++            io.papermc.paper.util.MCUtil.toBlockPos(position),
++            CraftStructure.bukkitToMinecraft(structure)
++        ).isValid();
++    }
++    // Paper end
+ 
+     private static final Random rand = new Random();
+ 

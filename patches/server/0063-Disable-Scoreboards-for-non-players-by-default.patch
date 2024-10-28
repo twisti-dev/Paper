@@ -11,10 +11,10 @@ So avoid looking up scoreboards and short circuit to the "not on a team"
 logic which is most likely to be true.
 
 diff --git a/src/main/java/net/minecraft/world/entity/Entity.java b/src/main/java/net/minecraft/world/entity/Entity.java
-index d5f5864b7c1ad4c30f37b360b317b63c129e3a3f..82e57978b79b5275b98a1fa7731c6a23ee861a2f 100644
+index 49df5f4b09926556986e3a45d52ff299b878af76..8a61ca3cba2888e03e440519714705fe50b81267 100644
 --- a/src/main/java/net/minecraft/world/entity/Entity.java
 +++ b/src/main/java/net/minecraft/world/entity/Entity.java
-@@ -2934,6 +2934,7 @@ public abstract class Entity implements SyncedDataHolder, Nameable, EntityAccess
+@@ -3057,6 +3057,7 @@ public abstract class Entity implements SyncedDataHolder, Nameable, EntityAccess
  
      @Nullable
      public PlayerTeam getTeam() {
@@ -23,10 +23,10 @@ index d5f5864b7c1ad4c30f37b360b317b63c129e3a3f..82e57978b79b5275b98a1fa7731c6a23
      }
  
 diff --git a/src/main/java/net/minecraft/world/entity/LivingEntity.java b/src/main/java/net/minecraft/world/entity/LivingEntity.java
-index 97ad63aad3c559feb1e762af1e00fd550aa5b251..ba194f42217f1176ac08123d3bb5cb24e1a6c119 100644
+index 6dba567e9f7a197af16598647f216b5323d1b601..47403887721914b632565947efae0dfa7c841588 100644
 --- a/src/main/java/net/minecraft/world/entity/LivingEntity.java
 +++ b/src/main/java/net/minecraft/world/entity/LivingEntity.java
-@@ -848,6 +848,7 @@ public abstract class LivingEntity extends Entity implements Attackable {
+@@ -871,6 +871,7 @@ public abstract class LivingEntity extends Entity implements Attackable {
              String s = nbt.getString("Team");
              Scoreboard scoreboard = this.level().getScoreboard();
              PlayerTeam scoreboardteam = scoreboard.getPlayerTeam(s);

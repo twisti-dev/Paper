@@ -5,10 +5,10 @@ Subject: [PATCH] Fix SpawnerEntry$Equipment API
 
 
 diff --git a/src/main/java/org/bukkit/block/spawner/SpawnerEntry.java b/src/main/java/org/bukkit/block/spawner/SpawnerEntry.java
-index 02b3471774ff1fd4ad15c2f04064fd485ef8f3e5..0fc5f04b8bb475e8afce61c6187a390cd36c3d9f 100644
+index fc1c0435dfea121923eb1fe0182880752f321143..bc8ccd139df6072f9744cfb85ad0070369600aa1 100644
 --- a/src/main/java/org/bukkit/block/spawner/SpawnerEntry.java
 +++ b/src/main/java/org/bukkit/block/spawner/SpawnerEntry.java
-@@ -121,28 +121,29 @@ public class SpawnerEntry {
+@@ -120,27 +120,29 @@ public class SpawnerEntry {
          private final Map<EquipmentSlot, Float> dropChances;
  
          public Equipment(@NotNull LootTable equipmentLootTable, @NotNull Map<EquipmentSlot, Float> dropChances) {
@@ -21,9 +21,8 @@ index 02b3471774ff1fd4ad15c2f04064fd485ef8f3e5..0fc5f04b8bb475e8afce61c6187a390c
 -         * Set the loot table for the entity.
 +         * Set the loot table for the spawned entity's equipment slots.
           * <br>
--         * To remove a loot table use null. Do not use {@link LootTables#EMPTY}
--         * to clear a LootTable.
-+         * To remove a loot table use {@link LootTables#EMPTY}.
+-         * To remove a loot table use null.
++         * To remove a loot table use the empty loot table.
           *
           * @param table this {@link org.bukkit.entity.Mob} will have.
           */
